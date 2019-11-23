@@ -1,0 +1,653 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	font-family: "Century Gothic";
+	background: url("../pictures/general/pattern.jpg") repeat;
+}
+a
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+#wrapper
+{
+	width: 100%;
+	min-height: 500px;
+}
+nav
+{	
+	position: fixed;
+	margin: 0 auto;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background: #232323;
+	border-bottom: 1px solid black;
+	z-index: 1;
+}
+#logo 
+{
+	float: left;
+	margin: 10px 10px 10px 20px;
+	width: 80px;
+	height: 80px;
+	background: url("../pictures/general/logo.png");
+}
+#menu_left, #menu_right
+{
+	float: left;
+	width: 750px;
+	height: 100px;
+}
+#menu_right
+{
+	float: right;
+	width: 350px;
+}
+#menu_left ul, #menu_right ul
+{
+	margin: 40px;
+	list-style: none;
+	float: left;
+}
+#menu_right ul
+{
+	float: right;
+}
+#menu_left ul li
+{
+	margin-left: 20px;
+	display: inline;
+}
+#menu_left ul li a, #menu_right ul li a
+{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+#menu_left ul li a:hover, #menu_right ul li a:hover
+{
+	color: #CCCCCC;
+}
+header
+{
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 128px;
+	height: 128px;
+	background: url("../pictures/general/header.png");
+}
+main
+{
+	margin: 0 auto;
+	padding: 50px;
+	width: 900px;
+	min-height: 500px;
+	text-align: center;
+	color: #CCCCCC;
+}
+hr
+{
+	margin: 50px 0px 50px 0px;
+}
+#slider
+{
+	position: relative;
+	margin: 0 auto;
+	width: 900px;
+	height: 506px;
+	border: 1px solid black;
+}
+.slide
+{
+    display: none;
+}
+.fade
+{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade
+{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+@keyframes fade 
+{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+#voting
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 100%;
+	min-height: 100px;
+}
+#voting a
+{
+	color: #CCCCCC;
+}
+#voting table
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 300px;
+	background-color: rgba(204, 204, 204, 0.3);
+	color: black;
+	text-align: left;
+	border-radius: 15px;
+	border: 3px solid green;
+}
+#voting table tr
+{
+	padding: 5px;
+	border: 1px solid black;
+}
+#voting table tr td
+{
+	padding: 5px;
+	border-radius: 15px;
+}
+#voting input[type=submit]
+{
+	margin: 10px;
+	width: 75px;
+	height: 50px;
+	background-color: #CCCCCC;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#voting input[type=submit]:hover
+{
+	background-color: green;
+	font-weight: bold;
+}
+#results
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 300px;
+	height: 100px;
+}
+#results ul
+{
+	list-style: none;
+}
+#results ul li
+{
+	margin: 10px;
+}
+.game
+{
+	position: relative;
+	float: left;
+	margin: 35px;
+	padding: 10px;
+	width: 210px;
+	height: 315px;
+	background-color: black;
+	border-radius: 5px;
+}
+.game p
+{
+	margin-top: 20px;
+	font-weight: bold;
+}
+.game img
+{
+	max-width: 100%;
+    height: 100%;
+}
+span.text
+{
+	position: absolute;
+	margin-bottom: 10px;
+	bottom: 0;
+	width: 210px;
+	height: 315px;
+	display: block;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+span.text:hover
+{
+	opacity: 1;
+}
+span.text p
+{
+	margin-top: 275px;
+	bottom: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+.clear
+{
+	clear: both;
+}
+#browse
+{
+	margin: 0 auto;
+	width: 100%;
+	height: 105px;
+}
+#browse select
+{
+	margin: 10px;
+	padding: 5px;
+	width: 200px;
+	height: 50px;
+	background-color: #232323;
+	color: #CCCCCC;
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;
+}
+#browse input[type=submit]
+{
+	margin: 10px;
+	width: 100px;
+	height: 50px;
+	background-color: #6AC045;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#browse input[type=submit]:hover
+{
+	background-color: #60A93C;
+}
+#browse input[type=text]
+{
+	padding: 8px 8px 8px 45px;
+	width: 550px;
+    box-sizing: border-box;
+    background-color: #232323;
+    background-image: url("../pictures/general/search.png"); 
+	background-position: 10px;
+    background-repeat: no-repeat;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+#browse input[type=text]:focus
+{
+	border: 2px solid #CCCCCC;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+#game
+{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 350px;
+}
+#game img
+{
+	float: left;
+	width: 210px;
+	height: 315px;
+	border-radius: 2px;
+	border: 2px solid black;
+}
+#game a
+{
+	margin-top: 5px;
+	color: black;
+}
+#game a:hover
+{
+	color: white;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+#information
+{
+	float: left;
+	padding-left: 10px;
+	width: 650px;
+	min-height: 250px;
+}
+#information h1
+{
+	text-align: left;
+}
+#information h3, #information p
+{
+	margin-top: 15px;
+	text-align: left;
+}
+#information p
+{
+	width: 100%;
+	height: 180px;
+	overflow-y: scroll;
+}
+iframe
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 100%;
+	height: 450px;
+}
+#gallery
+{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100px;
+}
+#gallery img
+{
+	float: left;
+	margin: 10px;
+	border: 3px solid black;
+}
+#nav_admin
+{
+	margin: 0 auto;
+	width: 100%;
+	height: 110px;
+	font-size: 20px;
+}
+#nav_admin ul li
+{
+	padding: 20px;
+	display: inline-block;
+	width: 100px;
+	background-color: #232323;
+	list-style: none;
+}
+#nav_admin ul li:hover
+{
+	background-color: #CCCCCC;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+#nav_admin ul a li
+{
+	font-weight: bold;
+	color: black;
+}
+.admin
+{
+	margin: 0 auto;
+	width: 100%;
+}
+.admin table
+{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+	color: black;
+	border: 5px solid black;
+}
+.admin table tr
+{
+	padding: 5px;
+}
+.admin table tr td
+{
+	padding: 5px;
+	border: 2px solid #232323;
+}
+.admin a
+{
+	color: black;
+}
+.admin a:hover
+{
+	color: white;
+}
+.admin input[type=text], .admin input[type=password], .admin textarea
+{
+	padding: 8px;
+	width: 100%;
+    box-sizing: border-box;
+	background-color: white;
+	color: black;
+	font-size: 15px;
+}
+.admin input[type=text]:focus, .admin input[type=password]:focus, .admin textarea:focus
+{
+	border: 2px solid green;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.admin input[type=submit]
+{
+	width: 75px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.admin input[type=submit]:hover
+{
+	background-color: grey;
+}
+#about
+{
+	margin: 0 auto;
+	width: 800px;
+	min-height: 270px;
+	text-align: center;
+}
+.profile
+{
+	float: left;
+	margin-right: 50px;
+	width: 250px;
+	height: 267px;
+	border-radius: 5px;
+	border: 3px solid black;
+}
+.social
+{
+	float: left;
+	margin: 50px 0px 0px 85px;
+	width: 50px;
+	height: 50px;
+}
+#poll
+{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 50px;
+}
+#poll table
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	color: #CCCCCC;
+	text-align: center;
+}
+#poll table tr td
+{
+	padding: 5px;
+}
+#registration
+{
+	margin: 0 auto;
+	margin-left: 300px;
+	width: 600px;
+	height: 350px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+#registration a
+{
+	color: #6AC045;
+}
+#registration a:hover
+{
+	color: #60A93C;
+}
+#registration h3
+{
+	margin-top: 25px;
+}
+#form_left, #form_right 
+{
+	float: left;
+	margin: 0 auto;
+	width: 300px;
+	text-align: center;
+}
+#form_right 
+{
+	float: right;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+.form
+{
+	margin: 0 auto;
+	width: 250px;
+}
+.form input[type=text], .form input[type=password], .form input[type=submit]
+{
+	margin-top: 25px;
+	padding: 8px 8px 8px 8px;
+	width: 250px;
+    box-sizing: border-box;
+	font-size: 20px;
+	color: #CCCCCC;
+    background-color: #232323;
+	border-radius: 5px;
+}
+.form input[type=submit]
+{
+	width: 100px;
+	color: black;
+	background-color: #6AC045;
+	cursor: pointer;
+}
+.form input[type=text]:focus, .form input[type=password]:focus 
+{
+	border: 2px solid #60A93C;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.form input[type=submit]:hover
+{
+	background-color: #60A93C;
+}
+footer
+{
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	background-color: #232323;
+	border-top: 1px solid black;
+}
+footer ul
+{
+	margin: 14px;
+	text-align: center;
+}
+footer ul li 
+{
+	display: inline-block;
+	margin: 0px 10px; 
+	list-style: none;
+}
+footer ul li a
+{
+	color: black;
+}
+footer ul li a:hover
+{
+	color: #CCCCCC;
+}
+.errors_up, .errors_down
+{	
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+.errors_down
+{
+	margin-top: 50px;
+}
+.errors_up ul, .errors_down ul
+{
+	list-style: none;
+}
+.message_up, .message_down
+{
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+}
+.message_down
+{
+	margin-top: 50px;
+}
+.pagination
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	min-width: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+}
+.pagination ul
+{
+	list-style: none;
+}
+.pagination ul li
+{
+	display: inline;
+	margin: 10px;
+}
+.pagination ul li a
+{
+	width: 50px;
+	display: inline-block;
+	background-color: #CCCCCC;
+	color: black;
+	border-radius: 5px;
+}
+.pagination ul li a:hover
+{
+	font-weight: bold;
+}

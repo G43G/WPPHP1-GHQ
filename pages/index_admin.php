@@ -284,7 +284,7 @@
 					{
 						if(move_uploaded_file($file_tmp, "pictures/games/".$file_name))
 						{
-							$query_insert = "INSERT INTO game VALUES('', '$name', '$publisher', $year, '$file_name', '$text', '$trailer')";
+							$query_insert = "INSERT INTO game VALUES('', '$name', '$publisher', $year, '$text', '$file_name', '$trailer')";
 							$result_insert = mysqli_query($connection, $query_insert);
 						}
 						

@@ -57,7 +57,7 @@
 		<script type="text/javascript" language="javaScript" src="script/script.js"></script>
 		<script type="text/javascript" language="javaScript" src="script/ajax.js"></script>
 	</head>
-	<body>
+	<body onload="showSlides();">
 		<div id="wrapper">
 			<nav>
 				<a href="index.php">

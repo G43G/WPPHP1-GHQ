@@ -1,5 +1,6 @@
 # WPPHP1-GHQ
 Website from ICT Web Programming - PHP1 course
+
 TO DO:
 
 1. Open and edit file connection.inc located in include folder (edit your localhost information).
